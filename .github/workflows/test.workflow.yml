@@ -21,15 +21,9 @@ jobs:
         run: npm i
       - name: Run tests
         run: npm run test
-  download:
-      runs-on: ubuntu-latest
-      needs: test
-      steps:
-        - name: ls
-          run: ${{ github.workspace }}
-        - name: download
+      - name: download
           uses: actions/upload-artifact@v3
-          with:
-            name: my-artifact
-            path: ${{ github.workspace }}/reports/awesome-reports
+            with:
+              name: my-artifact
+              path: ./reports/awesome-reports/*
 
