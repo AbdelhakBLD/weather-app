@@ -2,7 +2,7 @@ name: hello
 on: [push]
 jobs:
   test:
-    runs-on: unduntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Get Repository
         uses: actions/checkout@v3
