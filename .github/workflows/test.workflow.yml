@@ -11,6 +11,7 @@ jobs:
     steps:
       - name: Get repository
         uses: actions/checkout@v3
+        with:
           ref: refs/tags/${{ matrix.app }}
       - name: Installer nodejs
         uses: actions/setup-node@v2
