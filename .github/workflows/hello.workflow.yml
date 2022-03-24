@@ -11,5 +11,5 @@ jobs:
         uses: AbdelhakBLD/helloworldaction@v2
         with:
           name: TOTO
-        - name: Get output Diello
-          run: echo "${{ steps.hello.outputs.response }}"
+      - name: Get output Diello
+        run: echo "${{ steps.hello.outputs.response }}"
