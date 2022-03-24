@@ -26,7 +26,7 @@ jobs:
       needs: test
       steps:
         - name: Display structure of downloaded files
-          run: ls -R
+          run: ls
         - uses: actions/download-artifact@v3
           with:
             name: my-artifact
