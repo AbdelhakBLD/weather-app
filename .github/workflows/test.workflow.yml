@@ -21,9 +21,11 @@ jobs:
         run: npm i
       - name: Run tests
         run: npm run test
+      - name: Run tests coverage
+        run: npm run cover
       - name: download
         uses: actions/upload-artifact@v3
         with:
           name: my-artifact
-          path: ./reports/awesome-reports/*
+          path: ./reports
 
