@@ -25,9 +25,8 @@ jobs:
       runs-on: ubuntu-latest
       needs: test
       steps:
-        - name: Display structure of downloaded files
-          run: ls
-        - uses: actions/download-artifact@v3
+        - name: download
+          uses: actions/download-artifact@v3
           with:
             name: my-artifact
             path: ~/reports/awesome-reports
