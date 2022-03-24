@@ -48,3 +48,7 @@ jobs:
         with:
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/weather:latest
+      - name: Hello world
+        uses: AbdelhakBLD/helloworldaction@v2
+        with:
+          name: Toto
