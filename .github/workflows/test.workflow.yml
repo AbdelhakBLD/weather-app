@@ -1,11 +1,12 @@
 name: tests
 on: [push]
-strategy:
-  matrix:
-    node: [10, 12, 14, 16]
+
 jobs:
   test:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+      node: [10, 12, 14, 16]
     steps:
       - name: Get repository
         uses: actions/checkout@v3
