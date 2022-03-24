@@ -29,5 +29,5 @@ jobs:
           uses: actions/download-artifact@v3
           with:
             name: my-artifact
-            path: ./reports/awesome-reports
+            path: ${{ github.workspace }}/reports/awesome-reports
 
