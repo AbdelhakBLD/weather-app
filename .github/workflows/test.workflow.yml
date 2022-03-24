@@ -22,8 +22,8 @@ jobs:
       - name: Run tests
         run: npm run test
       - name: download
-          uses: actions/upload-artifact@v3
-            with:
-              name: my-artifact
-              path: ./reports/awesome-reports/*
+        uses: actions/upload-artifact@v3
+        with:
+          name: my-artifact
+          path: ./reports/awesome-reports/*
 
